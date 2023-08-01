@@ -99,6 +99,6 @@ if st.button('Predict'):
     loan=model.predict(final_data)
     if loan==1:
         st.balloons()
-        st.success("Congratilations,Loan is successfully Approved")
+        st.success("Congratulations,Loan is successfully Approved")
     else:
         st.warning("Sorry,You are not eligible for Loan approval")
