@@ -1,84 +1,67 @@
-# Loan Prediction ML
 
-![Loan Prediction](loan_img1.png)
+# Car Price Prediction using Machine Learning
 
-This repository contains Python scripts and Jupyter notebooks for loan prediction using machine learning. The goal of this project is to develop predictive models that can determine whether a loan application should be approved or not based on various features. The provided code helps in data preprocessing, model building, evaluation, and deployment of the loan prediction model.
+![Car Price Prediction](car_price_prediction.png)
+
+This repository contains a machine learning project that focuses on predicting car prices based on various features and attributes of the cars. The goal of this project is to develop a model that can accurately predict the price of a car given its characteristics, helping both buyers and sellers make informed decisions.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
+- [Dataset](#dataset)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Notebooks](#notebooks)
-- [Scripts](#scripts)
+- [Model](#model)
+- [Evaluation](#evaluation)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
 
-Loan prediction is a common use case for machine learning in the finance industry. This repository offers a comprehensive set of tools and scripts to build, evaluate, and deploy machine learning models for loan prediction. Whether you're a data scientist, machine learning enthusiast, or a financial institution, these resources will help you understand and implement loan prediction models.
+Predicting car prices is crucial in the automotive industry to assist customers in understanding the market value of a particular vehicle. This project utilizes machine learning techniques to create a predictive model for car prices. By training on a dataset containing various attributes of cars along with their prices, the model can learn patterns and relationships to make accurate predictions.
 
-## Prerequisites
+## Dataset
 
-Before you begin, ensure you have met the following requirements:
+The dataset used for this project is sourced from [CarData](https://www.cardata.com/dataset), containing information about a wide range of cars, including features like mileage, brand, model year, engine size, and more.
 
-- Python 3.11.4 installed
-- Required packages: pandas, numpy, scikit-learn, matplotlib, seaborn
-
-You can install the required packages using the following command:
-
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn
-```
+The dataset consists of:
+- **Features**: Various attributes of cars (e.g., brand, mileage, fuel type, etc.)
+- **Target**: Car prices
 
 ## Installation
 
-To use this project, follow these steps:
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/neerajcodes888/loan-prediction.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd loan_prediction
-```
+1. Clone this repository to your local machine: `git clone https://github.com/neerajcodes/car_price_predict.git`
+2. Navigate to the project directory: `cd car_price_predict`
+3. Create a virtual environment (optional but recommended): `python -m venv venv`
+4. Activate the virtual environment:
+   - On Windows: `venv\Scripts\activate`
+   - On macOS and Linux: `source venv/bin/activate`
+5. Install the required dependencies: `pip install -r requirements.txt`
 
 ## Usage
 
-To start using the loan prediction model, follow these steps:
+1. Make sure you have activated your virtual environment.
+2. Prepare your dataset:
+   - Download the dataset from [CarData](https://www.cardata.com/dataset) and save it in the project directory as `car_data.csv`.
+3. Run the data preprocessing script: `python preprocess_data.py`
+4. Train the model: `python train_model.py`
+5. After training, you can use the trained model to make predictions by running: `python predict.py`
 
-1. Prepare your loan dataset in CSV format and place it in the `data` directory.
+## Model
 
-2. Open the Jupyter notebook `loan_prediction.ipynb` in the `notebooks` directory to build and evaluate the loan prediction model.
+We are using a Random Forest regressor as the predictive model for this project. Random Forest is an ensemble learning method that combines multiple decision trees to make predictions. It is robust and handles non-linearity well, making it suitable for predicting car prices based on various features.
 
-3. Run the provided Python scripts in the `scripts` directory for specific tasks, such as data preprocessing, model training, and evaluation.
+## Evaluation
 
-## Notebooks
-
-The `notebooks` directory contains a Jupyter notebook for building the loan prediction model:
-
-- `loan_prediction.ipynb`: This notebook guides you through the entire process of loading data, preprocessing, model selection, training, evaluation, and deployment of the loan prediction model.
-
-## Scripts
-
-The `scripts` directory contains standalone Python scripts for various tasks:
-
-- `loan_prediction.py`: Contains functions for cleaning and preprocessing loan data , Defines machine learning models, trains them on the data, and saves the trained model , Evaluates the trained model's performance using various metrics.
-- `loan_approval_model`: The model for which loan prediction will work on!!!.
-- `requirements.txt`: The required packages and libraries of python to deploy on Streamlit Platform.
+The performance of the model is evaluated using metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R2) score on a test dataset. These metrics provide insights into how well the model is generalizing to unseen data.
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or want to enhance the loan prediction model, feel free to open a pull request. For major changes, please open an issue first to discuss the proposed changes.
+Contributions to this project are welcome! If you find any issues or want to enhance the project, feel free to open a pull request.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the 
 MIT License
 
 Copyright (c) [2023] [Neeraj Kumar]
@@ -101,8 +84,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
 
-Happy predicting! If you have any questions or suggestions, please feel free to contact us.
-
-![Loan Predictions](loan_img2.png)
