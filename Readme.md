@@ -23,7 +23,7 @@ Loan prediction is a common use case for machine learning in the finance industr
 
 Before you begin, ensure you have met the following requirements:
 
-- Python 3.x installed
+- Python 3.11.4 installed
 - Required packages: pandas, numpy, scikit-learn, matplotlib, seaborn
 
 You can install the required packages using the following command:
@@ -68,9 +68,9 @@ The `notebooks` directory contains a Jupyter notebook for building the loan pred
 
 The `scripts` directory contains standalone Python scripts for various tasks:
 
-- `data_preprocessing.py`: Contains functions for cleaning and preprocessing loan data.
-- `model_training.py`: Defines machine learning models, trains them on the data, and saves the trained model.
-- `model_evaluation.py`: Evaluates the trained model's performance using various metrics.
+- `loan_prediction.py`: Contains functions for cleaning and preprocessing loan data , Defines machine learning models, trains them on the data, and saves the trained model , Evaluates the trained model's performance using various metrics.
+- `loan_approval_model`: The model for which loan prediction will work on!!!.
+- `requirements.txt`: The required packages and libraries of python to deploy on Streamlit Platform.
 
 ## Contributing
 
