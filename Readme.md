@@ -1,6 +1,6 @@
 # Loan Prediction ML
 
-![Loan Prediction](images/loan_prediction.png)
+![Loan Prediction](loan_image1.png)
 
 This repository contains Python scripts and Jupyter notebooks for loan prediction using machine learning. The goal of this project is to develop predictive models that can determine whether a loan application should be approved or not based on various features. The provided code helps in data preprocessing, model building, evaluation, and deployment of the loan prediction model.
 
@@ -105,4 +105,4 @@ SOFTWARE.
 
 Happy predicting! If you have any questions or suggestions, please feel free to contact us.
 
-![ML Predictions](images/ml_predictions.png)
+![ML Predictions](loan_image2.png)
