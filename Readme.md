@@ -105,4 +105,4 @@ SOFTWARE.
 
 Happy predicting! If you have any questions or suggestions, please feel free to contact us.
 
-![Loan Predictions](loan_imgh2.png)
+![Loan Predictions](loan_img2.png)
