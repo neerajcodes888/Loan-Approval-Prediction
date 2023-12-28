@@ -1,7 +1,8 @@
 
 # Car Price Prediction using Machine Learning
 
-![Car Price Prediction](car_price_prediction.png)
+![loan](https://github.com/neerajcodes888/loan_prediction/assets/98253646/2f8354f4-535b-4da3-ad3b-899094daf9b0)
+
 
 This repository contains a machine learning project that focuses on predicting car prices based on various features and attributes of the cars. The goal of this project is to develop a model that can accurately predict the price of a car given its characteristics, helping both buyers and sellers make informed decisions.
 
