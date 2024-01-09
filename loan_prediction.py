@@ -7,7 +7,7 @@ html_tag="""
     <h2 style="color:yellow;text-align:center;">Loan Approval Prediction World</h2>
     <ul>
         <li style="color:red;">
-        <h5 style="color:blue;text-align:centre;">Welcome to loan approval  Prediction System Made by Machine Learning </h5>
+        <h5 style="color:blue;text-align:centre;">Welcome to loan approval  Prediction System  </h5>
         </li>
         <li style="color:red;"> 
         <h5 style="color:blue;text-align:centre;">     Predict Your loan is approved or not!</h5>
