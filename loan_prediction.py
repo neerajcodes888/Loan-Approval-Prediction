@@ -66,7 +66,7 @@ else:
     arg5=0
 arg6 = st.number_input("What is income of the Loan Applicant",150,81000,step=100)
 arg7 = st.number_input("What is income of the Loan Co-Applicant",0,50000,step=100)
-arg8 = st.number_input("Enter the amount of Loan You Want(in Lakhs)",1,700,step=10)
+arg8 = st.number_input("Enter the amount of Loan You Want(in Lakhs)",1,700,step=5)
 arg9 = st.number_input("In how many months , you will repay the Loan Amount",12,480,step=1)
 p6=st.selectbox("Does Credit History meet your Guidelines",('Yes','No'))
 if p6=='Yes':
