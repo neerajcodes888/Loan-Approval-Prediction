@@ -1,5 +1,6 @@
 
-# Car Price Prediction using Machine Learning
+# Loan Approval Prediction using Machine Learning
+
 
 ![loan](https://github.com/neerajcodes888/loan_prediction/assets/98253646/2f8354f4-535b-4da3-ad3b-899094daf9b0)
 
