@@ -7,7 +7,7 @@ html_tag="""
     <h2 style="color:yellow;text-align:center;">Loan Approval Prediction World</h2>
     <ul>
         <li style="color:red;">
-        <h5 style="color:blue;text-align:centre;">Welcome to loan approval  Prediction System  </h5>
+        <h5 style="color:blue;text-align:centre;">Welcome to loan approval  Prediction System Made by Machine Learning </h5>
         </li>
         <li style="color:red;"> 
         <h5 style="color:blue;text-align:centre;">     Predict Your loan is approved or not!</h5>
@@ -95,10 +95,14 @@ final_data=pd.DataFrame({
     'Property_Area':arg11
 },index=[0])
 
-if st.button('Predict'):
-    loan=model.predict(final_data)
+try:
+    if st.button('Predict'):
+     loan=model.predict(final_data)
     if loan==1:
         st.balloons()
-        st.success("Congratulations,Loan is successfully Approved")
+        st.success("Congratilations,Loan is successfully Approved")
     else:
         st.warning("Sorry,You are not eligible for Loan approval")
+except:
+    st.error("Some error occured,Please Try again")
+    
