@@ -104,6 +104,7 @@ try:
     else:
         st.warning("Sorry,You are not eligible for Loan approval")
 except:
+    pass
     
-    st.error("")
+
     
