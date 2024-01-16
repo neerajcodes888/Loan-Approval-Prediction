@@ -100,9 +100,9 @@ try:
      loan=model.predict(final_data)
     if loan==1:
         st.balloons()
-        st.success("Congratilations,Loan is successfully Approved")
+        st.success("Congratulations,Loan is successfully Approved")
     else:
         st.warning("Sorry,You are not eligible for Loan approval")
 except:
-    st.error("Some error occured,Please Try again")
+    st.error("")
     
