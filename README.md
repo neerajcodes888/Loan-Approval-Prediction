@@ -60,7 +60,7 @@ python app.py
 
 Ensure you have the following installed before running the application:
 
-- Python 3.x
+- Python 3.11.4
 - Flask
 - scikit-learn
 - HTML5-compatible web browser
