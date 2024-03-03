@@ -23,7 +23,7 @@ Loan Approval Prediction is a user-friendly web application that utilizes machin
 
 ### Demo Link
 
-You can access the live demo of the application [here](http://your-demo-link.com).
+You can access the live demo of the application [here](https://loan-approval-prediction-b5l5.onrender.com/).
 
 ### Video Demo
 
