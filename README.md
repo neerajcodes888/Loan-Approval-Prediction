@@ -39,3 +39,23 @@ To use the Loan Approval Prediction application, follow the installation steps m
 
 ```bash
 git clone https://github.com/your_username/loan-approval-prediction.git
+```
+
+### Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Flask application:
+```bash
+python app.py
+```
+
+## Installation
+
+### Clone the repository:
+
+```bash
+git clone https://github.com/neerajcodes888/Loan-Approval-Prediction.git
+```
+
