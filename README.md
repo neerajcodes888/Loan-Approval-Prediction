@@ -1,6 +1,6 @@
 # Loan Approval Prediction
 
-Welcome to Loan Approval Prediction, a web application designed to predict loan approvals using machine learning algorithms. This application is built using Python Flask, HTML5, and Tailwind CSS.
+![Loan-Approval-Prediction](https://socialify.git.ci/neerajcodes888/Loan-Approval-Prediction/image?description=1&descriptionEditable=Welcome%20to%20Loan%20Approval%20Prediction%2C%20a%20web%20application%20designed%20to%20%20%20%20%20predict%20loan%20approvals%20using%20machine%20learning%20algorithms.%20&language=1&name=1&owner=1&pattern=Solid&theme=Dark)
 
 ## Table of Contents
 
