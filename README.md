@@ -41,6 +41,12 @@ To use the Loan Approval Prediction application, follow the installation steps m
 git clone https://github.com/your_username/loan-approval-prediction.git
 ```
 
+2. Navigate to the project directory:
+
+```bash
+cd Loan-Approval-Prediction
+
+```
 ### Install dependencies:
 ```bash
 pip install -r requirements.txt
@@ -51,11 +57,4 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## Installation
-
-### Clone the repository:
-
-```bash
-git clone https://github.com/neerajcodes888/Loan-Approval-Prediction.git
-```
 
