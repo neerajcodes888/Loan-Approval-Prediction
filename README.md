@@ -28,6 +28,9 @@ You can access the live demo of the application [here](https://loan-approval-pre
 ### Video Demo
 
 
+![loan_Approval_Prediction Demo](https://github.com/neerajcodes888/Loan-Approval-Prediction/assets/98253646/276b7691-55f1-4aa4-95cb-daf5e76c3ffa)
+
+
 ## Usage
 
 To use the Loan Approval Prediction application, follow the installation steps mentioned below and ensure all prerequisites are met. Then, run the Flask application and navigate to the provided URL in your web browser. Input the necessary information and submit to get the loan approval prediction.
