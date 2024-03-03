@@ -56,4 +56,26 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Prerequisites
+
+Ensure you have the following installed before running the application:
+
+- Python 3.x
+- Flask
+- scikit-learn
+- HTML5-compatible web browser
+
+## Features
+
+- Predict loan approval based on user input.
+- Beautiful UI design using HTML5 and Tailwind CSS.
+- Efficient machine learning algorithms for accurate predictions.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contribution
+
+Contributions are welcome! Feel free to open issues and pull requests.
 
