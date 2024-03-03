@@ -27,7 +27,6 @@ You can access the live demo of the application [here](http://your-demo-link.com
 
 ### Video Demo
 
-Watch the video demonstration of the application [here](http://your-video-demo-link.com).
 
 ## Usage
 
@@ -38,7 +37,7 @@ To use the Loan Approval Prediction application, follow the installation steps m
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/loan-approval-prediction.git
+git clone https://github.com/neerajcodes888/loan-approval-prediction.git
 ```
 
 2. Navigate to the project directory:
