@@ -34,12 +34,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endCo
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"><b>Loan Approval Prediction</b></h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fill the form for prediction</p>
         </div>
+        <a class="btn btn-primary" href="./" role="button">Home</a><br><br>
+      
         <div class="prediction-box">
             <h2 class="text-lg text-white font-semibold mb-2">Prediction Result:</h2>
             <p class="text-base text-white" id="prediction-text">{{prediction_text}}</p>
         </div>
-    <a class="btn btn-primary" href="./" role="button">Back</a>
-    <br><br>
+    
+   
 <form action='/predict' method='POST'>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label"> Gender</label>
