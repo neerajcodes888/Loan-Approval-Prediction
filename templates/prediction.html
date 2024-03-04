@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,23 +10,32 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
     <title>prediction</title>
-  </head>
-  <body>
-  <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Loan prediction project</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">fill the form for prediction</p>
-      <br><br><h2><b>{{prediction_text}}</b></h2>
-    </div>
-    <div>
-    
-    </div>
+    <style>
+        /* Custom CSS for the prediction box */
+        .prediction-box {
+            background-color: #F59E0B; /* Set colorful background color */
+            border-radius: 8px; /* Set border radius */
+            padding: 20px; /* Add padding */
+            margin-bottom: 20px; /* Add margin bottom */
+        }
+    </style>
+</head>
+<body>
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"><b>Loan Approval Prediction</b></h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fill the form for prediction</p>
+        </div>
+        <div class="prediction-box">
+            <h2 class="text-lg text-white font-semibold mb-2">Prediction Result:</h2>
+            <p class="text-base text-white" id="prediction-text">{{prediction_text}}</p>
+        </div>
     <a class="btn btn-primary" href="./" role="button">Back</a>
+    <br><br>
 <form action='/predict' method='POST'>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"> gender</label>
+  <label for="exampleFormControlInput1" class="form-label"> Gender</label>
   <select class="form-select" id="gender" name="gender" aria-label="Default select example">
   <option selected>-- select gender --</option>
   <option value="Male">Male</option>
@@ -34,7 +43,7 @@
 </select>
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"> married status</label>
+  <label for="exampleFormControlInput1" class="form-label"> Marital status</label>
   <select class="form-select" id="married" name="married" aria-label="Default select example">
   <option selected>-- select married status --</option>
   <option value="Yes">Yes</option>
@@ -60,7 +69,7 @@
 </select>
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Self_Employed</label>
+  <label for="exampleFormControlInput1" class="form-label">Self Employed</label>
   <select class="form-select" id="employed" name="employed" aria-label="Default select example">
   <option selected>-- select Self_Employed --</option>
   <option value="Yes">Yes</option>
@@ -68,7 +77,7 @@
 </select>
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Credit_History</label>
+  <label for="exampleFormControlInput1" class="form-label">Credit History</label>
   <select class="form-select" id="credit" name="credit" aria-label="Default select example">
   <option selected>-- select Credit_History --</option>
   <option value="1.000000">1.000000</option>
@@ -77,7 +86,7 @@
 </select>
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Property_Area</label>
+  <label for="exampleFormControlInput1" class="form-label">Property Area</label>
   <select class="form-select" id="area" name="area" aria-label="Default select example">
   <option selected>-- select Property_Area --</option>
   <option value="Semiurban">Semiurban</option>
@@ -86,20 +95,20 @@
 </select>
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Enter ApplicantIncome</label>
-  <input type="text" class="form-control" id="ApplicantIncome" name="ApplicantIncome" placeholder="ApplicantIncome">
+  <label for="exampleFormControlInput1" class="form-label">Enter Applicant Income</label>
+  <input type="text" class="form-control" id="ApplicantIncome" name="ApplicantIncome" placeholder="Applicant Income">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Enter CoapplicantIncome</label>
-  <input type="text" class="form-control" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="CoapplicantIncome">
+  <label for="exampleFormControlInput1" class="form-label">Enter Coapplicant Income</label>
+  <input type="text" class="form-control" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Coapplicant Income">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Enter LoanAmount</label>
-  <input type="text" class="form-control" id="LoanAmount" name="LoanAmount" placeholder="LoanAmount">
+  <label for="exampleFormControlInput1" class="form-label">Enter Loan Amount</label>
+  <input type="text" class="form-control" id="LoanAmount" name="LoanAmount" placeholder="Loan Amount">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Enter Loan_Amount_Term</label>
-  <input type="text" class="form-control" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="Loan_Amount_Term">
+  <label for="exampleFormControlInput1" class="form-label">Enter Loan Amount Term</label>
+  <input type="text" class="form-control" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="Loan Amount Term">
 </div>
 
 
