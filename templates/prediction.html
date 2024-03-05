@@ -43,90 +43,86 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endCo
       </div>
       
     
-   
-<form action='/predict' method='POST'>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"> <b>Gender</b></label>
-  <select class="form-select" id="gender" name="gender" aria-label="Default select example">
-  <option selected>-- select gender --</option>
-  <option value="Male">Male</option>
-  <option value="Female">Female</option>
-</select>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"> <b>Marital status</b></label>
-  <select class="form-select" id="married" name="married" aria-label="Default select example">
-  <option selected>-- select married status --</option>
-  <option value="Yes">Yes</option>
-  <option value="No">No</option>
-</select>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Dependents</b></label>
-  <select class="form-select" id="dependents" name="dependents" aria-label="Default select example">
-  <option selected>-- select dependents --</option>
-  <option value="0">0</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3+">3+</option>
-</select>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Education</b></label>
-  <select class="form-select" id="education" name="education" aria-label="Default select example">
-  <option selected>-- select education --</option>
-  <option value="Graduate">Graduate</option>
-  <option value="Not Graduate">Not Graduate</option>
-</select>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Self Employed</b></label>
-  <select class="form-select" id="employed" name="employed" aria-label="Default select example">
-  <option selected>-- select Self_Employed --</option>
-  <option value="Yes">Yes</option>
-  <option value="No">No</option>
-</select>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Credit History</b></label>
-  <select class="form-select" id="credit" name="credit" aria-label="Default select example">
-  <option selected>-- select Credit_History --</option>
-  <option value="1.000000">1.000000</option>
-  <option value="0.000000">0.000000</option>
-  <option value="0.842199">0.842199</option>
-</select>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Property Area</b></label>
-  <select class="form-select" id="area" name="area" aria-label="Default select example">
-  <option selected>-- select Property_Area --</option>
-  <option value="Semiurban">Semiurban</option>
-  <option value="Urban">Urban</option>
-  <option value="Rural">Rural</option>
-</select>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Enter Applicant Income</b></label>
-  <input type="text" class="form-control" id="ApplicantIncome" name="ApplicantIncome" placeholder="Applicant Income">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Enter Coapplicant Income</b></label>
-  <input type="text" class="form-control" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Coapplicant Income">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Enter Loan Amount</b></label>
-  <input type="text" class="form-control" id="LoanAmount" name="LoanAmount" placeholder="Loan Amount">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label"><b>Enter Loan Amount Term</b></label>
-  <input type="text" class="form-control" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="Loan Amount Term">
-</div>
-
-
-
-
+   <form action='/predict' method='POST'>
+    <div class="mb-3">
+        <label for="gender" class="form-label"><b>Gender</b></label>
+        <select class="form-select" id="gender" name="gender" aria-label="Gender" required>
+            <option value="" disabled selected>-- select gender --</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="married" class="form-label"><b>Marital status</b></label>
+        <select class="form-select" id="married" name="married" aria-label="Marital status" required>
+            <option value="" disabled selected>-- select married status --</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="dependents" class="form-label"><b>Dependents</b></label>
+        <select class="form-select" id="dependents" name="dependents" aria-label="Dependents" required>
+            <option value="" disabled selected>-- select dependents --</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3+">3+</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="education" class="form-label"><b>Education</b></label>
+        <select class="form-select" id="education" name="education" aria-label="Education" required>
+            <option value="" disabled selected>-- select education --</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Not Graduate">Not Graduate</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="employed" class="form-label"><b>Self Employed</b></label>
+        <select class="form-select" id="employed" name="employed" aria-label="Self Employed" required>
+            <option value="" disabled selected>-- select Self_Employed --</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="credit" class="form-label"><b>Credit History</b></label>
+        <select class="form-select" id="credit" name="credit" aria-label="Credit History" required>
+            <option value="" disabled selected>-- select Credit_History --</option>
+            <option value="1.000000">1.000000</option>
+            <option value="0.000000">0.000000</option>
+            <option value="0.842199">0.842199</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="area" class="form-label"><b>Property Area</b></label>
+        <select class="form-select" id="area" name="area" aria-label="Property Area" required>
+            <option value="" disabled selected>-- select Property_Area --</option>
+            <option value="Semiurban">Semiurban</option>
+            <option value="Urban">Urban</option>
+            <option value="Rural">Rural</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="ApplicantIncome" class="form-label"><b>Enter Applicant Income</b></label>
+        <input type="text" class="form-control" id="ApplicantIncome" name="ApplicantIncome" placeholder="Applicant Income" required>
+    </div>
+    <div class="mb-3">
+        <label for="CoapplicantIncome" class="form-label"><b>Enter Coapplicant Income</b></label>
+        <input type="text" class="form-control" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Coapplicant Income" required>
+    </div>
+    <div class="mb-3">
+        <label for="LoanAmount" class="form-label"><b>Enter Loan Amount</b></label>
+        <input type="text" class="form-control" id="LoanAmount" name="LoanAmount" placeholder="Loan Amount" required>
+    </div>
+    <div class="mb-3">
+        <label for="Loan_Amount_Term" class="form-label"><b>Enter Loan Amount Term</b></label>
+        <input type="text" class="form-control" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="Loan Amount Term" required>
+    </div>
     <button type="submit" class="btn btn-primary">Predict</button>
-    </form>
+</form>
+
 
     
   </div>
