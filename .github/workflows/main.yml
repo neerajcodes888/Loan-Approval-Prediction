@@ -3,7 +3,7 @@ name: Auto Star
 on:
   push:
     branches:
-      - main  # Change this if you're using a different main branch
+      - main
 
 jobs:
   auto_star:
@@ -12,11 +12,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      
+
+    - name: Use Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'
+
     - name: Star repository
       env:
-        TOKEN: ${{ secrets.PAT }}
+        PAT: ${{ secrets.PAT }}
       run: |
-        curl -X PUT \
-          -H "Authorization: token $TOKEN" \
-          "https://api.github.com/user/starred/neerajcodes888/Loan-Approval-Prediction"
+        node .github/workflows/star-repository.js
